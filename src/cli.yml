@@ -1,0 +1,20 @@
+name: message-grip
+version: "0.1."
+author: Oscar Barlow <oscar.barlow@gmail.com>, Richard Hulm <richardhulm1992@gmail.com>
+about: moves queue messages around. simple like.
+args:
+    - profile:
+        short: p
+        long: profile
+        value_name: AWS_PROFILE
+        help: Sets which AWS profile to use
+        takes_value: true
+    - region:
+        short: r
+        long: region
+        value_name: AWS_REGION
+        help: Sets which AWS region to access
+        takes_value: true
+subcommands:
+    - list:
+        about: list SQS queues
